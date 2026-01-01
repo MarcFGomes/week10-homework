@@ -85,4 +85,4 @@ In the video, I show:
 This walkthrough verifies that the application works as expected and that the core logic is properly tested.
 
 🎥 **Walkthrough Video:**  
-[![Watch Video](./Images/Screenity_thumb.png)](./Images/Screenity.mp4)
+![Watch Video](./Images/Screenity gif.gif)
