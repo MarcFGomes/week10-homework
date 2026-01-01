@@ -2,6 +2,7 @@ const inquirer = require("inquirer");
 const SVG = require("./svg");
 const { Circle, Triangle, Square } = require("./shapes");
 const { writeFile } = require("fs/promises");
+const chalk = require("chalk");
 
 
 //Questions for user

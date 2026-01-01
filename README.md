@@ -67,3 +67,21 @@ Main/
 git clone https://github.com/your-username/svg-logo-maker.git
 cd svg-logo-maker
 npm install
+
+---
+
+## Walkthrough Video
+
+A walkthrough video is included to demonstrate the functionality of the application.
+
+In the video, I show:
+
+- Running the CLI application
+- Answering the prompts to create a custom logo
+- Generating an SVG logo file
+- Running the Jest test suite and confirming all tests pass
+
+This walkthrough verifies that the application works as expected and that the core logic is properly tested.
+
+🎥 **Walkthrough Video:**  
+![Alt Text](./Images/Screenity.mp4)
