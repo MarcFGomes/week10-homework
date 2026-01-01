@@ -1,135 +1,69 @@
-# 🧩 Module 10 Project: SVG Logo Maker (Object-Oriented Programming)
+# SVG Logo Maker (Node.js CLI Exercise)
 
 ## Overview
 
-In this project, you will build a Node.js command-line application that generates a simple logo and saves it as an SVG file.
-
-The application will prompt the user for text, colors, and a shape, then dynamically generate an SVG based on that input. This project emphasizes **object-oriented programming**, **testing with Jest**, and **command-line interaction**.
-
-Because this application is not deployed, you will also record a walkthrough video demonstrating that the application works correctly and that all tests pass.
+This project is a **Node.js command-line exercise** designed to practice Object-Oriented Programming (OOP), CLI application design, and unit testing.  
+The application prompts the user for input and generates a simple SVG logo based on the provided options.
 
 ---
 
-## 🧠 User Story
+## Learning Objectives
 
-As a freelance web developer, I want to generate a simple logo for my projects so that I don’t have to pay a graphic designer.
+By completing this exercise, learners will:
 
----
-
-## 🛠️ Application Behavior
-
-The application is run from the command line using:
-
-node index.js
-
-When executed, the application should:
-
-- Prompt the user for up to three characters of text
-- Prompt the user for a text color (color keyword or hex value)
-- Prompt the user to choose a shape: circle, triangle, or square
-- Prompt the user for a shape color (color keyword or hex value)
-- Generate an SVG file named logo.svg
-- Print the message "Generated logo.svg" to the terminal
-- Produce a 300x200 SVG image that matches the user’s input
-
-Opening the logo.svg file in a browser should display the generated logo.
+- Practice **JavaScript classes and inheritance**
+- Build a **command-line interface** using Inquirer
+- Separate logic into reusable modules
+- Generate valid **SVG files** programmatically
+- Write and run **unit tests** with Jest
+- Use Node.js filesystem utilities
 
 ---
 
-## ✅ Acceptance Criteria
+## Features
 
-Your project is complete when all of the following are true:
-
-- User input is collected using the Inquirer package
-- Text input is limited to three characters
-- Color input accepts either color keywords or hexadecimal values
-- Shape options include only circle, triangle, and square
-- A file named logo.svg is generated after all prompts are completed
-- The terminal displays "Generated logo.svg" after file creation
-- The SVG renders correctly in the browser at 300x200 pixels
-
----
-
-## 🧱 Object-Oriented Design Requirements
-
-Your application must include the following classes:
-
-- Triangle
-- Circle
-- Square
-
-Each shape class must:
-
-- Have a render() method
-- Return a string representing its SVG markup
-- Accept and apply a color to the SVG shape
-
-It is recommended (but not required) to create a parent Shape class and use inheritance to share common behavior.
-
-Example test that must pass:
-
-const shape = new Triangle();
-shape.setColor("blue");
-shape.render();
-
-Expected output:
-
-  <polygon points="150, 18 244, 182 56, 182" fill="blue" />
+- Interactive command-line interface
+- Shape options:
+  - Circle
+  - Square
+  - Triangle
+- Customizable:
+  - Text (1–3 characters)
+  - Text color
+  - Shape color
+- Generates an SVG logo file
+- Includes automated tests
 
 ---
 
-## 🧪 Testing Requirements
-
-- Jest must be used for unit testing
-- Each shape class must have at least one test verifying the render() output
-- All tests must pass and be shown in the walkthrough video
-
----
-
-## 📁 Suggested Project Structure
-
-.
-├── examples/ Example SVG files created by the app
-├── lib/ Classes and core logic
-│ ├── shapes.js Triangle, Circle, Square classes
-│ ├── shapes.test.js Jest tests for shape classes
-│ └── additional files as needed
-├── .gitignore
-├── index.js Entry point for the application
+## Project Structure
+```
+Main/
+├── index.js # Application entry point
+├── lib/
+│ ├── cli.js # CLI prompt logic
+│ ├── shapes.js # Shape classes (OOP)
+│ ├── svg.js # SVG generation logic
+│ ├── shapes.test.js # Unit tests for shapes
+│ └── svg.test.js # Unit tests for SVG output
+├── examples/ # Example output(s)
+├── logo.svg # Sample generated logo
 ├── package.json
-└── README.md Project description and video link
-
-Important:
-Make sure the dist folder is not ignored by Git so generated SVG files are tracked.
+└── README.md
+```
 
 ---
 
-## 🎥 Walkthrough Video Requirements
+## Getting Started
 
-Your submission must include a walkthrough video that demonstrates:
+### Prerequisites
 
-- Running the application from the command line
-- Answering all user prompts
-- All Jest tests passing
-- A generated SVG file being opened in the browser
-- The SVG matching the user’s chosen text, shape, and colors
+- Node.js (v16+ recommended)
+- npm
 
-The README.md file must include a link to this video.
+### Installation
 
----
-
-## 📦 Submission Checklist
-
-You must submit:
-
-- A GitHub repository with a unique name
-- Application source code
-- At least one example SVG file generated by the app
-- A README.md file with a project description and video link
-- A walkthrough video demonstrating functionality and passing tests
-
----
-
-## 🎯 Goal
-
-By completing this project, you will demonstrate your ability to apply object-oriented programming principles, write unit tests, and build a functional command-line application using Node.js.
+```bash
+git clone https://github.com/your-username/svg-logo-maker.git
+cd svg-logo-maker
+npm install
