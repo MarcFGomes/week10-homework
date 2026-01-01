@@ -67,6 +67,7 @@ Main/
 git clone https://github.com/your-username/svg-logo-maker.git
 cd svg-logo-maker
 npm install
+```
 
 ---
 
